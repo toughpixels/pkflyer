@@ -34,6 +34,14 @@ body {
     grid-template-columns: auto auto;
 }
 
-iframe {
-    width: 100% !important;
+.flex-sc-iframe {
+    padding-bottom: 100%;
+    position: relative;
+}
+.flex-sc-iframe iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100% !important;
+   height: 100% !important;
 }
