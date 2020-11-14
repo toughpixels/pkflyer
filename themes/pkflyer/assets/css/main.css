@@ -23,6 +23,7 @@ body {
         position: sticky;
         top: 0;
         max-height: 100vh;
+        /* background: var(--body); */
     }
     .main-col {
         flex: 1;
