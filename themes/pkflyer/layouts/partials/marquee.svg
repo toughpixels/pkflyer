@@ -1,0 +1,16 @@
+<svg width="200" height="700" version="1.1" viewBox="0 0 500 1500" xmlns="http://www.w3.org/2000/svg">
+    <use href="#flyer" transform="scale(.80, .80)" x="62" y="69" fill="lightgrey"/>
+    <use href="#flyer" transform="scale(.85, .85)" x="42" y="48" fill="lightgrey"/>
+    <use href="#flyer" transform="scale(.90, .90)" x="27" y="30" fill="lightgrey"/>
+    <use href="#flyer" transform="scale(.95, .95)" x="13" y="15" fill="lightgrey"/>
+    <text id="flyer" font-family="sans-serif" x="400" y="75" writing-mode="tb-rl" fill="pink" stroke="black">
+        <tspan font-size="10em" style="text-orientation:upright">
+            PK
+        </tspan>
+    </text>
+    <text id="pk" font-family="sans-serif" x="400" y="500" writing-mode="tb-rl" fill="pink" stroke="black">
+        <tspan font-size="10em" style="text-orientation:upright">
+            FLYER
+        </tspan>
+    </text>
+</svg>
