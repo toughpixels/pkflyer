@@ -1,12 +1,13 @@
 :root {
     --primary:#fb9dd9;
     --body: #3b3d4c;
+    --background: #f9f4c3
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: #fafafa;
+    background: var(--background);
     color: var(--body);
     /* border: 10px solid var(--body); */
 }
