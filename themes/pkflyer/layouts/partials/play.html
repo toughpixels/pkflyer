@@ -1,7 +1,0 @@
-<div class="play grid">
-    {{ range where .Pages "Section" "albums" }}
-        {{ range .Pages }}
-          {{ partial "albums/headerImage.html" . }}
-        {{ end }}
-    {{ end }}
-</div>

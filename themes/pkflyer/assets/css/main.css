@@ -49,8 +49,6 @@ body {
     width: 100%;
 }
 
-
-
 .embed {
     position: relative;
 }
@@ -69,7 +67,7 @@ body {
      padding-bottom: 56.25%;
  }
 
- h1      { font-size: 2em;       /* 2*16 = 32 */         }
+h1      { font-size: 2em;       /* 2*16 = 32 */         }
 h2      { font-size: 1.5em;     /* 1.5*16 = 24 */       }
 h3      { font-size: 1.17em;    /* 1.17*16 = 18.72 */   }
 h4      { font-size: 1em;       /* 1*16 = 16 */         }
@@ -78,6 +76,9 @@ h6      { font-size: 0.75em;    /* 0.75*16 = 12 */      }
 
 p { line-height: 1.5;
     margin: 0 0 1em;    }
-
-    strong  {   font-weight: bold;  }
+strong  {   font-weight: bold;  }
 em      {   font-style: italic; }
+
+.album-cover img {
+    max-width: 100%;
+}
