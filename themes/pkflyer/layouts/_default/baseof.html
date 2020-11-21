@@ -2,21 +2,15 @@
 <html>
   {{- partial "head.html" . -}}
   <body class="{{ .Params.layout }}">
-    {{- partial "header.html" . -}}
     <div id="content">
       <div class="container">
         <div class="layout">
-<<<<<<< HEAD
           <div class="marquee-col">
             <a href="{{ .Site.BaseURL }}">
               {{- partial "marquee.svg" . -}}
             </a>
           </div>
-          <div class="main-col">{{- block "main" . }}{{- end }}</div>
-=======
-          <div class="marquee-col">{{- partial "marquee.svg" . -}}</div>
           <div class="main-col page-content">{{- block "main" . }}{{- end }}</div>
->>>>>>> a5c7e54ca6e884c04b24838c1d1c6b2d83badfef
         </div>
       </div>
     </div>
