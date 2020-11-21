@@ -1,0 +1,7 @@
+{{ with .Resources.ByType "image" }}
+    <div class="Image">
+	{{ range . }}
+		<img src="{{ .RelPermalink }}">
+	{{ end }}
+	</div>
+{{ end }}
