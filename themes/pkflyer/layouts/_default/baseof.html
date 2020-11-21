@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body>
+  <body class="{{ .Params.layout }}">
     {{- partial "header.html" . -}}
     <div id="content">
       <div class="container">
         <div class="layout">
           <div class="marquee-col">{{- partial "marquee.svg" . -}}</div>
-          <div class="main-col">{{- block "main" . }}{{- end }}</div>
+          <div class="main-col page-content">{{- block "main" . }}{{- end }}</div>
         </div>
       </div>
     </div>
