@@ -33,10 +33,21 @@ body {
     
 }
 .grid {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
 }
+.grid > * {
+    padding: 15px;
+    width: 50%;
+    /* max-width: 700px; */
+    margin: auto;
+    box-sizing: border-box;
+}
+.grid > *:first-child {
+    width: 100%;
+}
+
 
 .flex-sc-iframe {
     padding-bottom: 100%;
