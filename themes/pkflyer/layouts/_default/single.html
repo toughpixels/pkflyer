@@ -2,6 +2,7 @@
     {{ partial "albums/headerImage.html" . }}
     {{ partial "albums/bandcamp.html" . }}
     {{ .Content }}
+    {{  .Page.Sections }}
     {{ range .Sections }}
         {{ partial "albums/track.html" . }}
     {{ end }}

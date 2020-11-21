@@ -1,3 +1,8 @@
 {{- define "main" }}
-
+{{ partial "albums/headerImage.html" . }}
+    {{ partial "albums/bandcamp.html" . }}
+    {{ .Content }}
+    {{ range .Pages }}
+        {{ partial "albums/track.html" . }}
+    {{ end }}
 {{- end }}
