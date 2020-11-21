@@ -59,7 +59,7 @@
      x="400"
      y="75"
      writing-mode="tb-rl"
-     fill="pink"
+     fill="var(--primary)"
      stroke="black">
     <tspan
        font-size="10em"

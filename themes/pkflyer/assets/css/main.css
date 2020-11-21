@@ -1,14 +1,9 @@
-:root {
-    --primary:#fb9dd9;
-    --body: #3b3d4c;
-    --background: #f9f4c3
-}
 
 body {
     margin: 0;
     padding: 0;
     background: var(--background);
-    color: var(--body);
+    color: var(--body-text);
     /* border: 10px solid var(--body); */
 }
 .container {
@@ -42,12 +37,23 @@ body {
 
 .flex-sc-iframe {
     padding-bottom: 100%;
+    
+}
+
+.embed {
     position: relative;
 }
-.flex-sc-iframe iframe {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100% !important;
-   height: 100% !important;
+.embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
+
+.embed-sc {
+    padding-bottom: 100%;
+ }
+ .embed-video {
+     padding-bottom: 56.25%;
+ }

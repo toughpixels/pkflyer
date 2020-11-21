@@ -3,6 +3,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=0">
     <meta name="description" content="PKFlyer new EP out December, 2020">
     <meta name="keywords" content="Indie, Music, Chicago Music">
+    <style>
+        /* John: Please save the front-matter variables in place of these hexes */
+    :root {
+        --primary:#fb9dd9; 
+        --body-text: #030303;
+        --background: #f9f4c3;
+    }
+    </style>
     {{ $style := resources.Get "css/main.css"  }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
     {{- partial "favicons.html" . -}}
