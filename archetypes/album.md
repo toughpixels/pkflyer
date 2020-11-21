@@ -5,9 +5,9 @@ draft: true
 videosUrls: []
 musicUrl: "https://bandcamp.com"
 buyUrl: ""
-backgroundColor: ""
-accentColor: ""
-textColor: ""
+primary: ""
+background: ""
+text: ""
 ---
 
 ## About This Album

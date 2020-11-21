@@ -4,9 +4,9 @@ date: 2020-11-21T13:36:35-06:00
 videosUrls: []
 musicUrl: "https://bandcamp.com"
 buyUrl: ""
-backgroundColor: ""
-accentColor: ""
-textColor: ""
+primary: "red"
+background: "blue"
+text: "orange"
 ---
 
 ## About This Album
