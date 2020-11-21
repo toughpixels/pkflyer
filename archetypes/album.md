@@ -10,7 +10,3 @@ primary: ""
 background: ""
 text: ""
 ---
-
-## About This Album
-
-This album was fun to make, and I'd do it again.
