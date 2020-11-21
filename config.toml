@@ -2,3 +2,7 @@ baseURL = "https://main.d2w046o5vfuwir.amplifyapp.com/"
 languageCode = "en-us"
 title = "PK Flyer"
 theme = "pkflyer"
+[Params]
+    primary = "#fb9dd9"
+    bodyText = "#030303"
+    background = "#f9f4c3"

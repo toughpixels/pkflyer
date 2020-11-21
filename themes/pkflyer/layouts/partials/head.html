@@ -5,10 +5,11 @@
     <meta name="keywords" content="Indie, Music, Chicago Music">
     <style>
         /* John: Please save the front-matter variables in place of these hexes */
+  
     :root {
-        --primary:#fb9dd9; 
-        --body-text: #030303;
-        --background: #f9f4c3;
+        --primary: {{ $.Param "primary" }}; 
+        --body-text: {{ $.Param "bodyText" }};
+        --background: {{ $.Param "background" }};
     }
     </style>
     {{ $style := resources.Get "css/main.css"  }}
