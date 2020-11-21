@@ -1,8 +1,6 @@
 .marquee-col svg {
     width: 100%;
     height: 100vh; 
-    /* width: 100px; */
-    /* background: red; */
 }
 body {
     font-family: sans-serif;
@@ -38,21 +36,20 @@ body {
     margin: -15px;
 }
 .grid > * {
+    width: 100%;
     padding: 15px;
-    width: 50%;
-    /* max-width: 700px; */
-    margin: auto;
     box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+    .grid > * {
+        width: 50%;
+    }
 }
 .grid > *:first-child {
     width: 100%;
 }
 
 
-.flex-sc-iframe {
-    padding-bottom: 100%;
-    
-}
 
 .embed {
     position: relative;
