@@ -2,12 +2,13 @@
 <html>
   {{- partial "head.html" . -}}
   <body class="{{ .Params.layout }}">
-    {{- partial "nav.html" . -}}
+    
     <div id="content">
       <div class="container">
         <div class="layout">
           <div class="marquee-col">
-            <a href="{{ .Site.BaseURL }}">
+            {{- partial "nav.html" . -}}
+            <a class="homeLink" href="{{ .Site.BaseURL }}">
               {{- partial "marquee.svg" . -}}
             </a>
           </div>
