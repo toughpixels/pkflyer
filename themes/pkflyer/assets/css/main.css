@@ -196,5 +196,6 @@ body.aboutme .main-col {
 }
 
 body.aboutme a.aboutme  {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
