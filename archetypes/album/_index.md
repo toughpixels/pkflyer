@@ -1,0 +1,14 @@
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: true
+albumId: "TBD"
+albumLink: "TBD"
+primary: "hotpink"
+background: "skyblue"
+text: "darkslategrey"
+---
+
+## About This Album
+
+This album was fun to make, and I'd do it again.
