@@ -2,7 +2,7 @@
     <div class="play grid">
         {{ range where .Pages "Section" "album" }}
             {{ range .Pages }}
-            {{ partial "album/albumCover.html" . }}
+                {{ partial "album/albumCover.html" . }}
             {{ end }}
         {{ end }}
     </div>
