@@ -88,14 +88,13 @@ p { line-height: 1.5;
 strong  {   font-weight: bold;  }
 em      {   font-style: italic; }
 
-.album-cover img {
-    max-width: 100%;
-    strong  {   font-weight: bold;  }
-em      {   font-style: italic; }
 
 img {
     max-width: 100%;
     display: block;
+}
+.textImageLayout {
+    display: none;
 }
 .textImageLayout .img {
     margin: var(--gap) 0 0 0;
@@ -115,7 +114,4 @@ img {
 
 body.aboutme .main-col {
     padding-bottom: 0;
-}
-body.aboutme .main-col .prose {
-    padding-bottom: var(--gap);
 }
