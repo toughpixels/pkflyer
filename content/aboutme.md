@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: ""
 date: 2020-11-21T13:36:35-06:00
 primary: "green"
 layout: "aboutme"

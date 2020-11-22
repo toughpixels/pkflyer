@@ -2,7 +2,8 @@
     {{ partial "album/albumCover.html" . }}
     {{ partial "album/bandcamp.html" . }}
     {{ .Content }}
-    {{  .Page.Sections }}
+    {{  .Sections }}
+    {{ .Page.Sections }}
     {{ range .Sections }}
         {{ partial "album/track.html" . }}
     {{ end }}
