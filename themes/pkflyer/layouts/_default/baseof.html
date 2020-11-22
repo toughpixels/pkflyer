@@ -7,7 +7,9 @@
       <div class="container">
         <div class="layout">
           <div class="marquee-col">
-            {{- partial "nav.html" . -}}
+            <div class="hide-xs">
+              {{- partial "nav.html" . -}}
+            </div>
             <a class="homeLink" href="{{ .Site.BaseURL }}">
               {{- partial "marquee.svg" . -}}
             </a>
