@@ -1,9 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
 vimeoId: "TBD"
-headless: true
+draft: true
 ---
 
 ## About This Track
