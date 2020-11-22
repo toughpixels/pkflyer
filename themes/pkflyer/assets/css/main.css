@@ -36,6 +36,10 @@ body {
 .album-cover a {
     display: block;
 }
+body.section .album-cover a {
+    pointer-events: none;
+    margin: 0 0 4rem;
+}
 .container {
     padding: 0 var(--gap);
 }
