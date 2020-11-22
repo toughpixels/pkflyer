@@ -1,7 +1,9 @@
 {{- define "main" }} 
     <div class="play grid">
         {{ range where .Pages "Section" "album" }}
+            asdf
             {{ range .Pages }}
+                1234
                 {{ partial "album/albumCover.html" . }}
             {{ end }}
         {{ end }}
