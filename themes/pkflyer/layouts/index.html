@@ -1,7 +1,9 @@
 {{- define "main" }} 
     <div class="play grid">
         {{ range .Sections }}
+            {{ . }}
             {{ range .Pages }}
+                {{ . }}
                 {{ partial "album/albumCover.html" . }}
             {{ end }}
         {{ end }}
