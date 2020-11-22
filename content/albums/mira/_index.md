@@ -1,12 +1,11 @@
 ---
 title: "Mira"
 date: 2020-11-21T13:36:35-06:00
-videoUrls: []
 albumLink: "https://pkflyer.bandcamp.com/album/mira"
 albumId: "1278184051"
-primary: "red"
-background: "blue"
-text: "orange"
+primary: "hotpink"
+background: "skyblue"
+text: "darkslategrey"
 ---
 
 ## About This Album
