@@ -122,12 +122,23 @@ strong  {   font-weight: bold;  }
 em      {   font-style: italic; }
 
 
-img {
+.main-col img {
     width: 100%;
     /* max-width: 100%; */
     display: block;
+    max-width: 800px;
+    margin: auto;
 }
-
+.prose img {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.prose > *:first-child {
+    margin-top: 0 !important;
+}
+.prose > *:last-child {
+    margin-bottom: 0 !important;
+}
 .textImageLayout .img {
     margin: var(--gap) 0 0 0;
 }
