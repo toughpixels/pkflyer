@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body class="{{ .Params.layout }}">
+  <body class="{{ .Kind }} {{ .Layout }}">
     
     <div id="content">
       <div class="container">
