@@ -1,10 +1,13 @@
 {{- define "main" }}
     {{ partial "album/albumCover.html" . }}
+    {{ if .Params.albumId && .Params.albumLink }}
+        {{ partial "album/bandcamp.html" . }}
+    {{ end }}
     {{ partial "album/bandcamp.html" . }}
     {{ .Content }}
-    {{  .Sections }}
-    {{ .Page.Sections }}
     {{ range .Sections }}
-        {{ partial "album/track.html" . }}
+        <h2>{{ .Title }}</h2>
+        {{ partial "album/vimeo.html" . }}
+        {{ .Content }}
     {{ end }}
 {{- end }}

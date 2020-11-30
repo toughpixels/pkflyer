@@ -1,8 +1,6 @@
 ---
 title: "Halo Machine"
 date: 2020-11-21T19:32:03-06:00
-albumId: "TBD"
-albumLink: "TBD"
 primary: "hotpink"
 background: "skyblue"
 text: "darkslategrey"
