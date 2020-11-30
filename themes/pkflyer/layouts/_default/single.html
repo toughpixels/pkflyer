@@ -1,6 +1,6 @@
 {{- define "main" }}
     {{ partial "album/albumCover.html" . }}
-    {{ if .Params.albumId && .Params.albumLink }}
+    {{ if and (.Params.albumId) (.Params.albumLink) }}
         {{ partial "album/bandcamp.html" . }}
     {{ end }}
     {{ partial "album/bandcamp.html" . }}
