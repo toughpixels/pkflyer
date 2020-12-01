@@ -178,7 +178,7 @@ body.aboutme .main-col {
     position: sticky;
     top: 0;
     list-style: none;
-    margin: 0;
+    margin: .5rem;
     padding: 0;
 }
 .siteNav li {

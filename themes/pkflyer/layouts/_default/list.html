@@ -1,8 +1,11 @@
 {{- define "main" }}
     {{ partial "album/albumCover.html" . }}
-    {{ partial "album/bandcamp.html" . }}
+    {{ if and (.Params.albumId) (.Params.albumLink) }}
+        {{ partial "album/bandcamp.html" . }}
+    {{ end }}
     {{ .Content }}
     {{ range .Pages }}
         {{ partial "album/track.html" . }}
     {{ end }}
+    {{ partial "signoff.html" . }}
 {{- end }}

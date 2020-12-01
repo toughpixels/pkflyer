@@ -1,3 +1,5 @@
 <h2>{{ .Title }}</h2>
-{{ partial "album/vimeo.html" . }}
+{{ if .Params.vimeoId }}
+    {{ partial "album/vimeo.html" . }}
+{{ end }}
 {{ .Content }}
