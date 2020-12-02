@@ -1,3 +1,9 @@
 <h2>{{ .Title }}</h2>
-{{ partial "album/vimeo.html" . }}
+{{ with .Resources.ByType "image" }}
+    <div class="track-image">
+	{{ range . }}
+			<img src="{{ .Permalink }}" />
+	{{ end }}
+	</div>
+{{ end }}
 {{ .Content }}

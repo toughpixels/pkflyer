@@ -1,15 +1,14 @@
 {{- define "main" }}
-<div class="album-page-header">
-    <div class="text-col">
-        {{ .Content }}
+{{ if .Params.vimeoId }}
+    {{ partial "album/vimeo.html" . }}
+{{ end }}
+    {{ partial "album/albumCover.html" . }}
+    {{ if and (.Params.albumId) (.Params.albumLink) }}
         {{ partial "album/bandcamp.html" . }}
-    </div>
-    <div class="img-col">
-        {{ partial "album/albumCover.html" . }}
-    </div>
-</div>
-
+    {{ end }}
+    {{ .Content }}
     {{ range .Pages }}
         {{ partial "album/track.html" . }}
     {{ end }}
+    {{ partial "signoff.html" . }}
 {{- end }}

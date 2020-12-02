@@ -2,10 +2,17 @@
 title: "Halo Machine"
 date: 2020-11-21T19:32:03-06:00
 primary: "hotpink"
+<<<<<<< HEAD
+background: "skyblue"
+text: "darkslategrey"
+headerText: "darkmagenta"
+--- 
+=======
 background: "black"
 text: "skyblue"
 vimeoId: "447673071"
 ---
+>>>>>>> a9757436c765fcd00bd62f858022fb7644da2cc2
 
 - Written & Recorded by Paul Karner at home
 - Mixed by Brian Sulpizio

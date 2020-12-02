@@ -1,7 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-vimeoId: "TBD"
+vimeoId: "REMOVE IF NO VIDEO"
+weight: 1
 draft: true
 ---
 

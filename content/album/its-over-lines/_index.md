@@ -6,7 +6,7 @@ albumLink: "https://pkflyer.bandcamp.com/album/its-over-lines"
 primary: "hotpink"
 background: "skyblue"
 text: "darkslategrey"
-headerText: "darkmagenta"
+draft: true
 ---
 
 ## About This Album
