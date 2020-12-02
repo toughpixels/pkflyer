@@ -1,7 +1,7 @@
 ---
 title: "Lake Street"
 date: 2020-11-21T20:01:11-06:00
-vimeoId: "447673071"
+
 weight: 2
 ---
 - Directed & Edited by Drew Durepos
