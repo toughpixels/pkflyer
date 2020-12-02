@@ -1,7 +1,14 @@
 {{- define "main" }}
-    {{ partial "album/albumCover.html" . }}
-    {{ partial "album/bandcamp.html" . }}
-    {{ .Content }}
+<div class="album-page-header">
+    <div class="text-col">
+        {{ .Content }}
+        {{ partial "album/bandcamp.html" . }}
+    </div>
+    <div class="img-col">
+        {{ partial "album/albumCover.html" . }}
+    </div>
+</div>
+
     {{ range .Pages }}
         {{ partial "album/track.html" . }}
     {{ end }}

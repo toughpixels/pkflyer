@@ -6,6 +6,7 @@ albumId: "1278184051"
 primary: "hotpink"
 background: "skyblue"
 text: "darkslategrey"
+headerText: "darkmagenta"
 ---
 
 ## About This Album

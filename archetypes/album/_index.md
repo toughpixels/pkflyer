@@ -6,6 +6,7 @@ albumLink: "TBD"
 primary: "hotpink"
 background: "skyblue"
 text: "darkslategrey"
+headerText: "darkmagenta"
 draft: true
 ---
 
