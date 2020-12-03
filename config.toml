@@ -1,4 +1,4 @@
-baseURL = "https://www.pkflyer.art"
+baseURL = "https://pkflyer.art"
 languageCode = "en-us"
 title = "PK Flyer"
 theme = "pkflyer"
