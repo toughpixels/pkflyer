@@ -27,7 +27,7 @@
     font-size: 16px;
 }
 body {
-    font-family: sans-serif;
+    font-family: verdana;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -250,4 +250,9 @@ font-size: 16px;}
   max-width: 300px;
   float: right;
   margin-left: 2em;
+}
+ol {list-style-type: none;
+font-weight: bold;
+list-style-position: inside;
+padding-left: 1em;
 }
