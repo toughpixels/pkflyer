@@ -1,13 +1,10 @@
 {{- define "main" }}
-{{ if .Params.vimeoId }}
-    {{ partial "album/vimeo.html" . }}
-{{ end }}
     {{ partial "album/albumCover.html" . }}
     {{ if and (.Params.albumId) (.Params.albumLink) }}
         {{ partial "album/bandcamp.html" . }}
     {{ end }}
     {{ .Content }}
-    {{ range .Pages }}
+    {{range .Sections }}
         {{ partial "album/track.html" . }}
     {{ end }}
     {{ partial "signoff.html" . }}
