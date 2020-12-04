@@ -21,7 +21,7 @@ headerText: "darkblue"
 - Mastered by Michael Noyce
 {{% /credits  %}}
  
-Musicians:
+#### Musicians:
 {{% credits  %}}
 - Becca Shorr - vocals
 - Stuart Seale - piano
