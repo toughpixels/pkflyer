@@ -1,6 +1,6 @@
 {{ $embedBase := "https://bandcamp.com/EmbeddedPlayer/album=" }}
-{{ $embedOptions := "/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" }}
+{{ $embedOptions := "/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" }}
 {{- $embedSrc  := print $embedBase .Params.albumId $embedOptions -}}
-<iframe style="border: 0; width: 100%; height: 120px;" 
+<iframe style="border: 0; width: 100%; height: 470px;" 
         src="{{$embedSrc}}" seamless>
 <a href="{{ .Params.albumLink }}">{{ .Title }}</a></iframe>

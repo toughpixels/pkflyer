@@ -243,16 +243,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-ul {list-style-type: none;
-font-size: 16px;}
+.credits ul {
+    list-style-type: none;
+    font-size: 16px;
+}
 
 .track-image {
-  max-width: 300px;
-  float: right;
-  margin-left: 2em;
+    max-width: 300px;
+    float: right;
+    margin-left: 2em;
 }
-ol {list-style-type: none;
-font-weight: bold;
-list-style-position: inside;
-padding-left: 1em;
+
+ol {
+    font-weight: bold;
+    list-style-position: inside;
+    padding-left: 1em;
 }
