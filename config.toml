@@ -5,9 +5,5 @@ theme = "pkflyer"
 [Params]
     primary = "#fb9dd9"
     bodyText = "#030303"
-    background = "#43990d"
-    headerText = "black"
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+    background = "#4aae0c"
+    headerText = "darkblue"
