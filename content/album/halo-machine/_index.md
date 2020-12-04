@@ -10,9 +10,15 @@ text: "skyblue"
 {{% credits  %}}
 - Directed & Edited by Drew Durepos
 - Camera by Jon Chandler
+{{% /credits %}}
+
+{{< bandcamp >}}
+<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=59640932/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/" seamless><a href="https://pkflyer.bandcamp.com/album/halo-machine">Halo Machine by PK Flyer</a></iframe>
+{{ /bandcamp }}
 
 # Halo Machine
 
+{{% credits  %}}
 - Written & Recorded by Paul Karner at home
 - Mixed by Brian Sulpizio
 - Mastered by Michael Noyce

@@ -6,7 +6,14 @@ albumId: "1278184051"
 primary: "hotpink"
 background: "skyblue"
 text: "black"
+headerText: "darkblue"
 ---
+{{< bandcamp >}}
+<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1278184051/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/" seamless><a href="https://pkflyer.bandcamp.com/album/mira">MIRA by PK Flyer</a></iframe>
+{{< /bandcamp >}}
+
+# Mira
+
 {{% credits  %}}
 - Written by Paul Karner
 - Recorded by Brian Sulpizio at Jamdek
