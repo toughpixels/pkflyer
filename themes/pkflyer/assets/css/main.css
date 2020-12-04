@@ -263,3 +263,8 @@ ol {
 a {
     color: var(--header-text);
 }
+
+.click-icon svg{
+    max-height: 2em;
+    fill: var(--header-text);
+}
