@@ -1,4 +1,5 @@
 {{- define "main" }}
+    {{ partial "album/vimeo.html" . }}
     {{ partial "album/albumCover.html" . }}
     {{ if and (.Params.albumId) (.Params.albumLink) }}
         {{ partial "album/bandcamp.html" . }}
