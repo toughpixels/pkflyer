@@ -4,6 +4,7 @@ date: 2020-11-21T19:32:03-06:00
 primary: "hotpink"
 background: "black"
 text: "skyblue"
+headerText: "aliceblue"
 ---
 {{< vimeo 447673071 >}}
 
@@ -13,8 +14,8 @@ text: "skyblue"
 {{% /credits %}}
 
 {{< bandcamp >}}
-<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=59640932/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/" seamless><a href="https://pkflyer.bandcamp.com/album/halo-machine">Halo Machine by PK Flyer</a></iframe>
-{{ /bandcamp }}
+<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=59640932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://pkflyer.bandcamp.com/album/halo-machine">Halo Machine by PK Flyer</a></iframe>
+{{< /bandcamp >}}
 
 # Halo Machine
 
