@@ -249,12 +249,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .track-image {
-    max-width: 300px;
-    float: right;
-    margin-left: 2em;
+  max-width: 300px;
+  float: right;
+  margin-left: 2em;
 }
 
 ol {
+    list-style-type: none;
     font-weight: bold;
     list-style-position: inside;
     padding-left: 1em;
