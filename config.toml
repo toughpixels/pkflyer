@@ -6,6 +6,7 @@ theme = "pkflyer"
     primary = "#fb9dd9"
     bodyText = "#030303"
     background = "#f9f4c3"
+    headerText = "black"
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
