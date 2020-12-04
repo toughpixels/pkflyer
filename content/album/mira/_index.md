@@ -16,7 +16,7 @@ headerText: "darkblue"
 
 {{% credits  %}}
 - Written by Paul Karner
-- Recorded by Brian Sulpizio at Jamdek
+- Recorded by Brian Sulpizio at [Jamdek](http://www.jamdek.co/)
 - Mixed by Brian Sulpizio
 - Mastered by Michael Noyce
 {{% /credits  %}}
