@@ -10,11 +10,8 @@ text: "skyblue"
 {{% credits  %}}
 - Directed & Edited by Drew Durepos
 - Camera by Jon Chandler
-{{% /credits %}}
 
 # Halo Machine
-
-{{% credits  %}}
 
 - Written & Recorded by Paul Karner at home
 - Mixed by Brian Sulpizio
