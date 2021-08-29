@@ -7,3 +7,5 @@ theme = "pkflyer"
     bodyText = "#030303"
     background = "#4aae0c"
     headerText = "darkblue"
+[markup.goldmark.renderer]
+unsafe= true
