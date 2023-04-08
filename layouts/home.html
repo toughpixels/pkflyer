@@ -1,4 +1,7 @@
 {{- define "main" }} 
+<div class="events">
+    {{ .Content }}
+</div>
     <div class="play grid">
         {{ range where .Sections "Section" "album" }}
             {{ range .Sections }}
