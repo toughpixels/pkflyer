@@ -88,9 +88,6 @@ body.section .album-cover a {
         width: 50%;
     }
 }
-.grid > *:first-child {
-    width: 100%;
-}
 
 .prose {
     max-width: 600px;
@@ -268,3 +265,4 @@ a {
     max-height: 2em;
     fill: var(--header-text);
 }
+.events {text-align: center; font-size: larger;}
