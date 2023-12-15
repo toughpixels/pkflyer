@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: main
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "music"
+    label: "Music"
+    folder: "content/music"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Release Date", name: "date", widget: "date"}
+      - {label: "Bandcamp Link", name: "bandCampLink", widget: "string"}
+      - {label: "Bandcamp Album ID (found in the Bandcamp embed code)", name: "bandcampAlbumId", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "painting"
+    label: "Paintings"
+    folder: "content/painting"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Event Date", name: "date", widget: "date"}
+      - {label: "Event Link", name: "eventLink", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    

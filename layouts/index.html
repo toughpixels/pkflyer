@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="grid logo-grid container">
+    {{ with resources.Get "images/header.png" }}
+    {{ partial "image" . }}
+    {{ end }}
+    <div class="logo">
+        {{ partial "svg/horizontal_pk_flyer_logo.svg" . }}
+    </div>
+</div>
+<div class="grid">
+    {{ range .Sections }}
+    <h2 class="full-width-grid tc">{{ .Title }}</h2>
+        {{ range .Sections }}
+            {{ partial "album/albumCover.html" . }}
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}
