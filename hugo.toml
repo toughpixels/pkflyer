@@ -1,6 +1,6 @@
 baseURL = "http://example.com"
 languageCode = "en-us"
-title = ""
+title = "PK Flyer"
 theme = "base"
 [markup]
   [markup.goldmark]
