@@ -10,6 +10,8 @@ bandcampAlbumId: '2951458552'
 
 Recorded on January 29th, 2022
 
+## Credits
+
 - Composed by: Paul Karner
 - Performed by: Emma Hospelhorn, Brian Sulpizio, John Sutton, Andrew Trim, Seth Vanek, and Paul Karner
 - Engineered and mixed by: Drew Durepos & Alex Inglizian

@@ -1,0 +1,15 @@
+{{- define "main" }}
+<div class="container">
+    <h1>{{ .Title }} by PK Flyer</h1>
+    <div>{{ .Content }}</div>
+    <ul>
+    {{ range .RegularPages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <div>Released {{ .Date | time.Format ":date_long" }}</div>
+            {{ partial "music/bandcamp_small.html" . }}
+        </li>
+    {{ end }}
+    </ul>
+</div>
+{{- end }}

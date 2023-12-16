@@ -1,0 +1,9 @@
+{{ $page := . }}
+{{ with and (.Params.bandcampAlbumId) (.Params.bandCampLink) }}
+<iframe
+  style="border: 0; width: 100%; height: 100%"
+  src="https://bandcamp.com/EmbeddedPlayer/album={{ $page.Params.bandcampAlbumId }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+  seamless
+  ><a href="{{ $page.Params.bandCampLink }}">{{ $page.Title }} by PK Flyer</a></iframe
+>
+{{ end }}

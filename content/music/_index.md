@@ -1,6 +1,5 @@
 ---
 title: Albums
-weight: 1
 ---
 
 [**PK Flyer**](https://pkflyer.bandcamp.com/) is the solo musical output of Paul Karner.

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="grid logo-grid container">
+<div class="grid logo-grid container tc">
     {{ with resources.Get "images/header.png" }}
     {{ partial "image" . }}
     {{ end }}
@@ -7,7 +7,7 @@
         {{ partial "svg/horizontal_pk_flyer_logo.svg" . }}
     </div>
 </div>
-<div class="grid">
+<div class="grid tc">
     {{ range .Sections }}
     <h2 class="full-width-grid tc">{{ .Title }}</h2>
         {{ range .Sections }}
