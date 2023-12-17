@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Header Font";
+    src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Body Font";
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Header Font", sans-serif;
+}
+
+body {
+    font-family: "Body Font", serif;
+}
