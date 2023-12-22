@@ -1,29 +1,52 @@
 {{ define "main" }}
 <div class="grid logo-grid container tc">
-    {{ with resources.Get "images/header.png" }}
-    {{ partial "image" . }}
-    {{ end }}
-    <div class="logo">
-        {{ partial "svg/horizontal_pk_flyer_logo.svg" . }}
-    </div>
+  {{ with resources.Get "images/header.png" }} {{ partial "image" . }} {{ end }}
+  <div class="logo">{{ partial "svg/horizontal_pk_flyer_logo.svg" . }}</div>
 </div>
 <div class="grid tc">
-    {{ range .Sections }}
-    <h2 class="full-width-grid tc">{{ .Title }}</h2>
-        {{ range .Sections }}
-            {{ partial "album/albumCover.html" . }}
-        {{ end }}
+  {{ range .Sections }}
+  <h2 class="full-width-grid tc">{{ .Title }}</h2>
+  <div class="grid justify-center align-center">
+    {{ if eq (.Section) "music" }} {{ range .RegularPages }} {{ partial
+    "music/bandcamp_small.html" . }}
+    <div>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>, released {{ .Date |
+      time.Format ":date_short" }}
+    </div>
+  </div>
+  {{ end }} {{ else if eq (.Section) "events" }}
+  <div class="grid justify-center align-center">
+    {{ range .RegularPages }} {{ if ge .Date time.Now }}
+    <div>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date | time.Format
+      ":date_long" }} at {{ .Params.venue_name }}
+    </div>
+    {{ end }} {{ end }}
+    <a class="tc" href="{{ .RelPermalink }}">All Past Events</a>
+  </div>
+  {{ else if eq (.Section) "art" }}
+  <div class="grid justify-center align-center">
+    {{ range .RegularPages }} {{ if ge .Date time.Now }}
+    <div>
+      <span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date | time.Format
+        ":date_long" }} at {{ .Params.venue_name }}
+      </span>
+    </div>
     {{ end }}
+  </div>
+  {{ end }} {{ end }}
 </div>
+{{ end }}
 <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 {{ end }}
