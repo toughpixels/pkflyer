@@ -8,6 +8,8 @@ Halo Machine was composed atop 3 separate drones. The songs use religious tropes
 
 ## Liner Notes
 
+![Icon of Jesus on the Cross with a bookcase in the background and a bright light shining from the bottom of Jesus' torso](/images/uploads/hmweb2.png)
+
 ### Halo Machine
 
 Just keep scrolling.
