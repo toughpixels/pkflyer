@@ -1,10 +1,10 @@
 <footer class="ma-sm">
-    <div class="flex container justify-around ma-sm height-lg footer-accent accent-border">
+    <div class="flex max-width-lg justify-around ma-sm gap-md pv-sm height-lg footer-accent accent-border">
         {{ $footers := slice (.Site.GetPage "home") }}
         {{ $footers = $footers | append .Site.Sections }}
         {{ range $footers }}
             {{ $icon := .Params.icon }}
-            <a href="{{ .RelPermalink }}" class="navigation-link ma-sm flex direction-column">
+            <a href="{{ .RelPermalink }}" class="navigation-link ma-xsm flex direction-column">
                 {{ with .Params.icon }}
                     {{ partial . }}
                 {{ end }}

@@ -1,15 +1,10 @@
 {{- define "main" }}
-<div class="container">
-    <h1>{{ .Title }} by PK Flyer</h1>
-    <div>{{ .Content }}</div>
-    <ul>
-    {{ range .RegularPages }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            <div>Released {{ .Date | time.Format ":date_long" }}</div>
-            {{ partial "music/bandcamp_small.html" . }}
-        </li>
-    {{ end }}
-    </ul>
+<div class="max-width-lg flex direction-column gap-sm">
+  <h1 class="tc wrap-balance underline">{{ .Title }} by PK Flyer</h1>
+  <div>{{ .Content }}</div>
+  <div class="flex direction-column gap-sm align-center justify-center">
+    {{ range .RegularPages }} {{ partial "music/music_preview_pane.html" . }} {{
+    end }}
+  </div>
 </div>
 {{- end }}

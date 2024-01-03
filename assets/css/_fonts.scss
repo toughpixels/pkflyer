@@ -20,3 +20,19 @@ h6 {
 body {
     font-family: "Body Font", serif;
 }
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.wrap-balance {
+    text-wrap: balance;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline-headers h1, .underline-headers h2, .underline-headers h3 {
+    text-decoration: underline;
+}

@@ -1,7 +1,9 @@
 {{ define "main" }}
-    <div class="grid album-grid container">
-        {{ partial "music/bandcamp_large.html" . }}
-        <h1>{{ .Title }}</h1>
+    <div class="grid album-grid container gap-xsm underline-headers">
+        <h1 class="wrap-balance tc">{{ .Title }}</h1>
+        <div class="flex justify-center">
+            {{ partial "music/bandcamp_large.html" . }}
+        </div>
         <div>{{ .Content }}</div>
         <div>Release Date:  {{ .Date | time.Format ":date_long" }}</div>
     </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     {{- partial "head.html" . -}}
-    <body class="{{ .Kind }} {{ .Layout }}">
+    <body class="flex direction-column gap-xsm pa-xsm align-center mv-auto">
         <main>
         {{- block "main" . }}{{- end }}
         </main>

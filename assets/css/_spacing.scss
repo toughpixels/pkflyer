@@ -1,8 +1,12 @@
 :root {
+    --double-extra-small-gap: .25rem;
     --extra-small-gap: .5rem;
     --small-gap: 1rem;
     --medium-gap: 2rem;
     --large-gap: 4rem;
+    --large-character-width: 65ch;
+    --medium-character-width: 40ch;
+    --small-character-width: 20ch;
 }
 
 .mt-sm {
@@ -17,20 +21,41 @@
     margin-bottom: 0;
 }
 
+.ma-xxsm {
+    margin: var(--double-extra-small-gap)
+}
+
+.ma-xsm {
+    margin: var(--extra-small-gap)
+}
+
 .ma-sm {
     margin: var(--small-gap);
+}
+
+.ma-md {
+    margin: var(--medium-gap);
+}
+
+.ma-md {
+    margin: var(--medium-gap);
+}
+
+.pa-xsm {
+    padding: var(--extra-small-gap);
 }
 
 .pa-sm {
     padding: var(--small-gap);
 }
 
-.pa-md {
-    padding: var(--medium-gap);
+.pv-sm {
+    padding-left: var(--small-gap);
+    padding-right: var(--small-gap);
 }
 
-.ma-md {
-    margin: var(--medium-gap);
+.pa-md {
+    padding: var(--medium-gap);
 }
 
 .height-sm {
@@ -41,8 +66,20 @@
     height: var(--medium-gap);
 }
 
+.max-width-sm {
+    max-width: var(--small-character-width);
+}
+
 .height-lg {
     height: var(--large-gap);
+}
+
+.max-width-md {
+    max-width: var(--medium-character-width);
+}
+
+.max-width-lg {
+    max-width: var(--large-character-width);
 }
 
 .gap-xsm {
