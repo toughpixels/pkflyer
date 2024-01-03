@@ -1,0 +1,27 @@
+---
+title: Halo Machine
+date: '2020-12-08'
+bandCampLink: 'https://pkflyer.bandcamp.com/album/halo-machine'
+bandcampAlbumId: '59640932 '
+---
+Halo Machine was composed atop 3 separate drones. The songs use religious tropes to explore the meditations and brooding that comes with the monastic rhythms of living alone during lockdown.
+
+## Liner Notes
+
+### Halo Machine
+
+Just keep scrolling.
+
+### Lake Street
+
+There’s a presumption that you have to get out of the city to find peace and tranquility, but for me the stretch of Lake St between Ashland and Kedzie has always been a place of respite. You feel at once in the guts of the city and at an observation point. No facades and few people on foot, it’s a uniquely sleepy part of town that for me welcomes reflection. Kanye walked this stretch under the lake st el to get some things off his chest in 2018 and I had an image of Yeezus going to Lake Street to pray like Jesus did in Gethsemane. I’m not that interested in the inner thoughts of politicians, however, so instead wrote my own Lake Street prayer.
+
+### Tenant
+
+## Credits
+
+* Written & Recorded by Paul Karner at home
+* Mixed by Brian Sulpizio
+* Mastered by Michael Noyce
+* Flute on 1 & 3 by Emma Hospelhorn
+* Viola on 2 by Whitney Johnson
