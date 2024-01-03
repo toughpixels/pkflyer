@@ -44,6 +44,11 @@ footer {
     border-top-style: solid;
 }
 
+.footer-accent {
+    background-color: var(--pop-accent);
+    border-radius: 9999px;
+}
+
 .logo {
     padding-bottom: 1rem;
     border-bottom: .4rem;
@@ -59,9 +64,19 @@ img {
 }
 
 .text-pk path {
-    font-size: 32.9418px;
-    writing-mode: tb-rl;
-    fill: #ff00ff;
-    stroke: #000000;
+    fill: var(--pop-accent);
+    stroke: var(--black);
     stroke-width: .75;
+}
+
+.preview-pane {
+    border-radius: 1rem;
+}
+
+.music-preview-pane {
+    background-color: var(--music-preview-color);
+}
+
+.accent-border {
+    border: 3px solid var(--black);
 }

@@ -3,36 +3,27 @@
   {{ with resources.Get "images/header.png" }} {{ partial "image" . }} {{ end }}
   <div class="logo">{{ partial "svg/horizontal_pk_flyer_logo.svg" . }}</div>
 </div>
-<div class="grid tc">
+<div class="flex direction-column gap-sm tc">
   {{ range .Sections }}
-  <h2 class="full-width-grid tc">{{ .Title }}</h2>
-  <div class="grid justify-center align-center">
-    {{ if eq (.Section) "music" }} {{ range .RegularPages }} {{ partial
-    "music/bandcamp_small.html" . }}
-    <div>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>, released {{ .Date |
-      time.Format ":date_short" }}
-    </div>
+  <h2 class="tc mb-none">{{ .Title }}</h2>
+  <div class="height-lg flex justify-center mb-sm">
+    {{ partial "internal-link" . }}
   </div>
+  <div class="flex direction-column justify-center align-center gap-sm">
+    {{ if eq (.Section) "music" }} {{ range .RegularPages }} {{ partial "music/music_preview_pane" . }}
   {{ end }} {{ else if eq (.Section) "events" }}
-  <div class="grid justify-center align-center">
+  <div class="flex direction-column justify-center align-center">
     {{ range .RegularPages }} {{ if ge .Date time.Now }}
-    <div>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date | time.Format
-      ":date_long" }} at {{ .Params.venue_name }}
-    </div>
-    {{ end }} {{ end }}
-    <a class="tc" href="{{ .RelPermalink }}">All Past Events</a>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date | time.Format
+    ":date_long" }} at {{ .Params.venue_name }} {{ end }} {{ end }}
   </div>
   {{ else if eq (.Section) "art" }}
-  <div class="grid justify-center align-center">
+  <div class="flex direction-column justify-center align-center">
     {{ range .RegularPages }} {{ if ge .Date time.Now }}
-    <div>
-      <span>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date | time.Format
-        ":date_long" }} at {{ .Params.venue_name }}
-      </span>
-    </div>
+    <span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date | time.Format
+      ":date_long" }} at {{ .Params.venue_name }}
+    </span>
     {{ end }}
   </div>
   {{ end }} {{ end }}
