@@ -20,6 +20,8 @@ There’s a presumption that you have to get out of the city to find peace and t
 
 ### Tenant
 
+Power is granted in civil society, and therefore it is always tenuous. If you lean into the “alternative” narrative that those in power like to put forth, you start to reveal its absurdity. At the end of the day, your boss is your client and you are your landord’s. We should treat them accordingly. Also, please address your landlord as “Lord” from here on out.
+
 ## Credits
 
 * Written & Recorded by Paul Karner at home
