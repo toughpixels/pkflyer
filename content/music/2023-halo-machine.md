@@ -25,7 +25,7 @@ Power is granted in civil society, and therefore it is always tenuous. If you le
 ## Credits
 
 * Written & Recorded by Paul Karner at home
-* Mixed by Brian Sulpizio
-* Mastered by Michael Noyce
-* Flute on 1 & 3 by Emma Hospelhorn
-* Viola on 2 by Whitney Johnson
+* Mixed by [Brian Sulpizio](https://brianjsulpizio.com/)
+* Mastered by [Michael Noyce](https://www.instagram.com/vincentvognar)
+* Flute on 1 & 3 by [Emma Hospelhorn](https://www.emmahospelhorn.com/)
+* Viola on 2 by [Whitney Johnson](https://matchesse.tumblr.com/)

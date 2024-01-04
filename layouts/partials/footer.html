@@ -1,14 +1,16 @@
-<footer class="ma-sm">
-    <div class="flex max-width-lg justify-around ma-sm gap-md pv-sm height-lg footer-accent accent-border">
+<footer class="ma-sm flex gap-md pa-sm">
+    {{ partial "utility/back_in_section.html" . }}
+    <div class="flex max-width-md justify-around gap-md pv-sm height-lg footer-accent round-border accent-border">
         {{ $footers := slice (.Site.GetPage "home") }}
         {{ $footers = $footers | append .Site.Sections }}
         {{ range $footers }}
             {{ $icon := .Params.icon }}
-            <a href="{{ .RelPermalink }}" class="navigation-link ma-xsm flex direction-column">
+            <a href="{{ .RelPermalink }}" class="navigation-link ma-xsm">
                 {{ with .Params.icon }}
                     {{ partial . }}
                 {{ end }}
             </a>
         {{ end }}
     </div>
+    {{ partial "utility/forward_in_section.html" . }}
 </footer>

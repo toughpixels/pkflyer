@@ -1,0 +1,10 @@
+{
+    "instagram": {
+        "url": "https://www.instagram.com/karnerp/",
+        "icon": "svg/icon/instagram.svg"
+    },
+    "bandcamp": {
+        "url": "https://pkflyer.bandcamp.com/",
+        "icon": "svg/icon/bandcamp.svg"
+    }
+}

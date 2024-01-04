@@ -1,0 +1,12 @@
+{{ with .PrevInSection }}
+<div
+  class="height-lg round-border footer-accent accent-border left-navigation-link"
+>
+  <a href="{{ .RelPermalink }}">
+    {{ partial "svg/navigation/previous_icon.svg" . }}
+  </a>
+</div>
+{{ end }}
+{{ if (and (not .PrevInSection) .NextInSection)}}
+{{ partial "utility/no_section_navigation.html" . }}
+{{ end }}
