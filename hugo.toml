@@ -7,8 +7,7 @@ theme = "base"
     [markup.goldmark.renderer]
       unsafe = true
 [params]
-  description = "A starter website for the Hugo framework."
-  title = "My Basic Website"
+  description = "The art and music of PK Flyer."
   headerImage  = "images/header.png"
   author = "Tough Pixels"
   imageSizes = "1280 768 640 320"

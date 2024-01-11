@@ -11,8 +11,8 @@
   <div class="flex max-width-md justify-around gap-md pv-sm height-lg mt-sm">
     {{ partial "utility/back_in_section.html" . }} {{ with .Site.GetPage "home"
     }}
-    <div class="round-border footer-accent accent-border">
-      <a href="{{ .RelPermalink }}" class="navigation-link">
+    <div class="round-border footer-accent accent-border navigation-link">
+      <a href="{{ .RelPermalink }}">
         {{ with .Params.icon }} {{ partial . }} {{ end }}
       </a>
     </div>
