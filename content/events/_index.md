@@ -1,5 +1,5 @@
 ---
 title: Events
-weight: 10
+weight: 1
 icon: svg/calendar_icon.svg
 ---

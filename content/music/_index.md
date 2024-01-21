@@ -1,6 +1,6 @@
 ---
 title: Music
-weight: 1
+weight: 10
 icon: svg/music_icon.svg
 ---
 
