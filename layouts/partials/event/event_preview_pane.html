@@ -1,0 +1,12 @@
+<div
+  class="flex direction-column max-width-md gap-sm pa-sm sm-shadow accent-border preview-pane {{ .Section }}-preview-pane"
+>
+  <div class="flex justify-around align-center">
+    <a class="navigation-link height-md" href="{{ .RelPermalink }}"
+      >{{ partial "svg/calendar_icon.svg" . }}</a
+    >
+    <div class="font-weight-600">
+      Released: {{ partial "utility/date_short.html" . }}
+    </div>
+  </div>
+</div>
