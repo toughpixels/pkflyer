@@ -1,6 +1,6 @@
 {{- define "main" }}
 <div class="max-width-lg flex direction-column gap-sm">
-  <h1 class="tc wrap-balance underline">{{ .Title }} by Paul Karner</h1>
+  <h1 class="tc wrap-balance underline">{{ .Title }}</h1>
   <div>{{ .Content }}</div>
   <div class="flex direction-column gap-sm align-center justify-center">
     {{ range .RegularPages }} {{ partial "event/event_preview_pane.html" . }} {{
