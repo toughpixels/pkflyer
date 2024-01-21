@@ -17,6 +17,7 @@ collections:
       - {label: "Bandcamp Link", name: "bandCampLink", widget: "string"}
       - {label: "Bandcamp Album ID (found in the Bandcamp embed code)", name: "bandcampAlbumId", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Credits", name: "credits", widget: "markdown"}
   - name: "painting"
     label: "Paintings"
     folder: "content/painting"
@@ -26,6 +27,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tag", name: "tag", widget: "select"}
+
   - name: "events"
     label: "Events"
     folder: "content/events"
@@ -33,7 +36,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Event Date", name: "date", widget: "date"}
+      - {label: "Event Date", name: "eventDate", widget: "date"}
       - {label: "Event Link", name: "eventLink", widget: "string"}
       - {label: "Cost", name: "cost", widget: "number"}
       - {label: "Location", name: "location", widget: "string"}

@@ -1,6 +1,6 @@
 ---
 title: 'CHURCH!, FIRE-TOOLZ, JESSICA RISKER'
-date: '2023-01-29'
+eventDate: '2023-01-29'
 eventLink: >-
   https://goldendagger.com/event-detail/12783315/church-fire-toolz-jessica-risker/
 cost: '10'
