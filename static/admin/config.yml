@@ -12,33 +12,43 @@ collections:
     create: true
     slug: "{{year}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Release Date", name: "date", widget: "date"}
-      - {label: "Bandcamp Link", name: "bandCampLink", widget: "string"}
-      - {label: "Bandcamp Album ID (found in the Bandcamp embed code)", name: "bandcampAlbumId", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Credits", name: "credits", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Release Date", name: "date", widget: "date" }
+      - { label: "Bandcamp Link", name: "bandCampLink", widget: "string" }
+      - {
+          label: "Bandcamp Album ID (found in the Bandcamp embed code)",
+          name: "bandcampAlbumId",
+          widget: "string",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Credits", name: "credits", widget: "markdown" }
+
   - name: "painting"
     label: "Paintings"
     folder: "content/painting"
     create: true
     slug: "{{year}}-{{month}}-{{slug}}"
+    media_folder: ""
+    public_folder: ""
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tag", name: "tag", widget: "select"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tag", name: "tag", widget: "select" }
 
   - name: "events"
     label: "Events"
-    folder: "content/events"
+    folder: "content/events/{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: ""
+    public_folder: ""
+    slug: "_index.md"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Event Date", name: "eventDate", widget: "date"}
-      - {label: "Event Link", name: "eventLink", widget: "string"}
-      - {label: "Cost", name: "cost", widget: "number"}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Event Date", name: "eventDate", widget: "date" }
+      - { label: "Event Detail Link", name: "eventDetailLink", widget: "string" }
+      - { label: "Cost", name: "cost", widget: "number" }
+      - { label: "Ticket Purchase Link", name: "ticketPurchaseLink", widget: "string" }
+      - { label: "Venue Name", name: "venueName", widget: "string" }
+      - { label: "Venue Address", name: "venueAddress", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

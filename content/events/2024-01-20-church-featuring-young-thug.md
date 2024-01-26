@@ -1,9 +1,11 @@
 ---
 title: CHURCH! featuring Young Thug
 eventDate: '2024-04-14'
-eventLink: 'https://hideoutchicago.com/events/'
+eventDetailLink: 'https://hideoutchicago.com/events/'
+ticketPurchaseLink: 'https://hideoutchicago.com/events/'
 cost: '10'
-location: 'Hideout, Chicago'
+venueName: 'The Hideout'
+venueAddress: '2447 N. Halsted Street, Chicago, IL'
 ---
 CHURCH! is an exciting show about GOD.
 
