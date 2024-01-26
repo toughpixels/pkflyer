@@ -1,0 +1,5 @@
+<div class="flex direction-column justify-center align-center">
+  {{ range .RegularPages }} 
+  {{ if ge (time.AsTime .Params.eventDate) time.Now }} {{ partial
+  "event/event_preview_pane.html" . }} {{end}} {{ end}}
+</div>

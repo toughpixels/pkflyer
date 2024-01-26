@@ -2,9 +2,9 @@
 <div class="max-width-lg flex direction-column gap-sm">
   <h1 class="tc wrap-balance underline">{{ .Title }}</h1>
   <div>{{ .Content }}</div>
-  <div class="flex direction-column gap-sm align-center justify-center">
-    {{ range .RegularPages }} {{ partial "event/event_preview_pane.html" . }} {{
-    end }}
+    {{ partial "event/upcoming_events.html" . }}
+    <h2 class="underline tc">Past Events</h2>
+    {{ partial "event/past_events.html" . }}
   </div>
 </div>
 {{- end }}

@@ -5,8 +5,35 @@
     <a class="navigation-link height-md" href="{{ .RelPermalink }}"
       >{{ partial "svg/calendar_icon.svg" . }}</a
     >
+    {{ with .Params.eventDate }}
     <div class="font-weight-600">
-      Released: {{ partial "utility/date_short.html" . }}
+      {{ partial "utility/date_short.html" (time.AsTime . ) }}
     </div>
+    {{ end }}
   </div>
+  <div class="flex gap-sm">
+  {{ with .Params.venueName }}
+  <div>
+    At {{ . }}
+  </div>
+  {{ end }}
+  {{ with .Params.eventLink }}
+  <div>
+    <a href="{{ . }}" target="_blank">Venue Event Page</a>
+  </div>
+  {{ end }}
+</div>
+  <div class="flex gap-sm">
+  {{ with .Params.cost }}
+  <div>
+    ${{ . }}
+  </div>
+  {{ end }}
+  {{ with .Params.ticketPurchaseLink }}
+  <div>
+    <a href="{{ . }}" target="_blank">Buy Tickets</a>
+  </div>
+  {{ end }}
+  </div>
+
 </div>

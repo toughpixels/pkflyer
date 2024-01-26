@@ -1,0 +1,4 @@
+{{ range .RegularPages }}
+{{ if le (time.AsTime .Params.eventDate) time.Now }} {{ partial "event/event_preview_pane.html" . }} {{
+    end }}
+{{ end}}
