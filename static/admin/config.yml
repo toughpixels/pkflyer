@@ -22,7 +22,16 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Credits", name: "credits", widget: "markdown" }
-
+  - label: "Art Collection"
+    name: "artCollection"
+    folder: "tags/art_collection/"
+    path: "_index"
+    create: true
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Collection Description", name: "body", widget: "markdown" }
   - name: "painting"
     label: "Paintings"
     folder: "content/painting"
@@ -34,21 +43,37 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tag", name: "tag", widget: "select" }
+      - {
+          label: "Tag",
+          name: "artCollection",
+          collection: "artCollection",
+          widget: "relation",
+          multiple: false,
+          search_fields: ["title"],
+          value_field: "title",
+        }
 
   - name: "events"
     label: "Events"
-    folder: "content/events/{{year}}-{{month}}-{{day}}-{{slug}}"
+    folder: "content/events"
     create: true
     media_folder: ""
     public_folder: ""
-    slug: "_index.md"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}/_index"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Event Date", name: "eventDate", widget: "date" }
-      - { label: "Event Detail Link", name: "eventDetailLink", widget: "string" }
+      - {
+          label: "Event Detail Link",
+          name: "eventDetailLink",
+          widget: "string",
+        }
       - { label: "Cost", name: "cost", widget: "number" }
-      - { label: "Ticket Purchase Link", name: "ticketPurchaseLink", widget: "string" }
+      - {
+          label: "Ticket Purchase Link",
+          name: "ticketPurchaseLink",
+          widget: "string",
+        }
       - { label: "Venue Name", name: "venueName", widget: "string" }
       - { label: "Venue Address", name: "venueAddress", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
