@@ -24,13 +24,14 @@ collections:
       - { label: "Credits", name: "credits", widget: "markdown" }
   - label: "Art Collection"
     name: "artCollection"
-    folder: "tags/art_collection/"
+    folder: "tags/art_collection/{{slug}}"
     path: "_index"
     create: true
     media_folder: ""
     public_folder: ""
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", default: true }
       - { label: "Collection Description", name: "body", widget: "markdown" }
   - name: "painting"
     label: "Paintings"
