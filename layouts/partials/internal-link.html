@@ -1,5 +1,7 @@
-<a href="{{ .RelPermalink }}" class="navigation-link">
-    {{ with .Params.icon }}
-        {{ partial . }}
-    {{ end }}
-</a>
+
+    <div class="font-weight-600">More {{ .Title }}:</div>
+    <a href="{{ .RelPermalink }}" class="navigation-link height-md">
+        {{ with .Params.icon }}
+            {{ partial "svg/navigation/link_icon.svg" }}
+        {{ end }}
+    </a>

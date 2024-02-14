@@ -22,16 +22,16 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Credits", name: "credits", widget: "markdown" }
-  - label: "Art Collection"
+  - label: "Art Collection Tag"
     name: "artCollection"
-    folder: "tags/art_collection/{{slug}}"
-    path: "_index"
+    folder: "tags/art_collection/"
+    slug: "{{slug}}/_index"
     create: true
     media_folder: ""
     public_folder: ""
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", default: true }
+      - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Collection Description", name: "body", widget: "markdown" }
   - name: "painting"
     label: "Paintings"
@@ -53,7 +53,6 @@ collections:
           search_fields: ["title"],
           value_field: "title",
         }
-
   - name: "events"
     label: "Events"
     folder: "content/events"

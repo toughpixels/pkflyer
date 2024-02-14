@@ -1,29 +1,33 @@
 <div
-  class="flex direction-column max-width-md gap-sm pa-sm sm-shadow accent-border preview-pane {{ .Section }}-preview-pane"
+  class="font-weight-600 flex direction-column max-width-md width-wide gap-sm pa-sm sm-shadow accent-border preview-pane {{ .Section }}-preview-pane"
+>
+<div class="flex justify-around align-center">
+  <div class="underline">{{.Title}}</div>
+</div>
+<a class="navigation-link height-md" href="{{ .RelPermalink }}"
+>{{ partial "svg/calendar_icon.svg" . }}</a
 >
   <div class="flex justify-around align-center">
-    <a class="navigation-link height-md" href="{{ .RelPermalink }}"
-      >{{ partial "svg/calendar_icon.svg" . }}</a
-    >
+    {{ with .Params.venueName }}
+    <div class="font-weight-600">
+      {{ . }}
+    </div>
+    {{ end }}
     {{ with .Params.eventDate }}
     <div class="font-weight-600">
       {{ partial "utility/date_short.html" (time.AsTime . ) }}
     </div>
     {{ end }}
   </div>
-  <div class="flex gap-sm">
-  {{ with .Params.venueName }}
-  <div>
-    At {{ . }}
-  </div>
-  {{ end }}
   {{ with .Params.eventLink }}
+  <div class="flex justify-around align-center">
   <div>
     <a href="{{ . }}" target="_blank">Venue Event Page</a>
   </div>
-  {{ end }}
 </div>
-  <div class="flex gap-sm">
+  {{ end }}
+
+  <div class="flex justify-around align-center gap-sm">
   {{ with .Params.cost }}
   <div>
     ${{ . }}
@@ -35,5 +39,5 @@
   </div>
   {{ end }}
   </div>
-
 </div>
+
