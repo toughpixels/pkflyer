@@ -24,8 +24,8 @@ collections:
       - { label: "Credits", name: "credits", widget: "markdown" }
   - label: "Art Collection Tag"
     name: "artCollection"
-    folder: "tags/art_collection/"
-    slug: "{{slug}}/_index"
+    folder: "tags/art_collection"
+    path: "{{title}}/_index"
     create: true
     media_folder: ""
     public_folder: ""
