@@ -2,78 +2,78 @@ backend:
   name: git-gateway
   branch: add-images
 publish_mode: editorial_workflow
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: 'static/images/uploads'
+public_folder: '/images/uploads'
 
 collections:
-  - name: "music"
-    label: "Albums"
-    folder: "content/music"
+  - name: 'music'
+    label: 'Albums'
+    folder: content/music
     create: true
-    slug: "{{year}}-{{slug}}"
+    slug: '{{year}}-{{slug}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Release Date", name: "date", widget: "date" }
-      - { label: "Bandcamp Link", name: "bandCampLink", widget: "string" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Release Date', name: 'date', widget: 'date' }
+      - { label: 'Bandcamp Link', name: 'bandCampLink', widget: 'string' }
       - {
-          label: "Bandcamp Album ID (found in the Bandcamp embed code)",
-          name: "bandcampAlbumId",
-          widget: "string",
+          label: 'Bandcamp Album ID (found in the Bandcamp embed code)',
+          name: 'bandcampAlbumId',
+          widget: 'string',
         }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Credits", name: "credits", widget: "markdown" }
-  - label: "Art Collection Tag"
-    name: "artCollection"
-    folder: "tags/art_collection"
-    path: "{{title}}/_index"
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Credits', name: 'credits', widget: 'markdown' }
+  - label: 'Art Collection Tag'
+    name: 'artCollection'
+    folder: tags/art_collection
+    path: '{{slug}}/_index'
     create: true
-    media_folder: ""
-    public_folder: ""
+    media_folder: ''
+    public_folder: ''
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Collection Description", name: "body", widget: "markdown" }
-  - name: "painting"
-    label: "Paintings"
-    folder: "content/painting"
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Collection Description', name: 'body', widget: 'markdown' }
+  - name: 'painting'
+    label: 'Paintings'
+    folder: content/painting
     create: true
-    slug: "{{year}}-{{month}}-{{slug}}"
-    media_folder: ""
-    public_folder: ""
+    slug: '{{year}}-{{month}}-{{slug}}'
+    media_folder: ''
+    public_folder: ''
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
       - {
-          label: "Tag",
-          name: "artCollection",
-          collection: "artCollection",
-          widget: "relation",
+          label: 'Tag',
+          name: 'artCollection',
+          collection: 'artCollection',
+          widget: 'relation',
           multiple: false,
-          search_fields: ["title"],
-          value_field: "title",
+          search_fields: ['title'],
+          value_field: 'title',
         }
-  - name: "events"
-    label: "Events"
-    folder: "content/events"
+  - name: 'events'
+    label: 'Events'
+    folder: 'content/events'
     create: true
-    media_folder: ""
-    public_folder: ""
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}/_index"
+    media_folder: ''
+    public_folder: ''
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}/_index'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Event Date", name: "eventDate", widget: "date" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Event Date', name: 'eventDate', widget: 'date' }
       - {
-          label: "Event Detail Link",
-          name: "eventDetailLink",
-          widget: "string",
+          label: 'Event Detail Link',
+          name: 'eventDetailLink',
+          widget: 'string',
         }
-      - { label: "Cost", name: "cost", widget: "number" }
+      - { label: 'Cost', name: 'cost', widget: 'number' }
       - {
-          label: "Ticket Purchase Link",
-          name: "ticketPurchaseLink",
-          widget: "string",
+          label: 'Ticket Purchase Link',
+          name: 'ticketPurchaseLink',
+          widget: 'string',
         }
-      - { label: "Venue Name", name: "venueName", widget: "string" }
-      - { label: "Venue Address", name: "venueAddress", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Venue Name', name: 'venueName', widget: 'string' }
+      - { label: 'Venue Address', name: 'venueAddress', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
