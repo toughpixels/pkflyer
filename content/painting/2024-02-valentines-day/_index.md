@@ -5,7 +5,7 @@ images:
   - pxl_20240124_040116264.jpg
   - img_8856.jpg
   - pxl_20240120_230541108.portrait.jpg
-artCollection:
+tags:
   - Valentine's Day Collection
 ---
 Tiny paintings I made for Valentine's day 2024, my first cycle of commissioned paintings.
