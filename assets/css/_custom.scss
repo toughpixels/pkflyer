@@ -79,6 +79,19 @@ img {
     background-color: var(--event-preview-color);
 }
 
+.painting-preview-pane {
+    background-color: var(--painting-preview-color);
+}
+
 .accent-border {
     border: 3px solid var(--black);
+}
+
+.painting-preview-container figure {
+    margin: 0;
+}
+
+.painting-preview-container figure img {
+    border-radius: 3px;
+    border: 3px solid black;
 }

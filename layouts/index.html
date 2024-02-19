@@ -10,16 +10,13 @@
     {{ if eq (.Section) "music" }} {{ range first 1 .RegularPages }} {{ partial "music/music_preview_pane" . }}
   {{ end }} {{ else if eq (.Section) "events" }}
     {{ partial "event/upcoming_events.html" . }}
-  {{ else if eq (.Section) "art" }}
-  <div class="flex direction-column justify-center align-center">
-    {{ range .RegularPages }} {{ if ge .Params.eventDate time.Now }}
-    <span>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Params.eventDate | time.Format
-      ":date_long" }} at {{ .Params.venue_name }}
-    </span>
+  {{ else if eq (.Section) "painting" }}
+  <div class="flex direction-column justify-center align-center gap-sm">
+    {{ range .Pages }}
+    {{ partial "painting/painting_preview_pane" . }}
     {{ end }}
   </div>
-  {{ end }} {{ end }}
+ {{ end }}
   <div class="flex justify-center align-center gap-sm mb-sm">
     {{ partial "internal-link" . }}
   </div>

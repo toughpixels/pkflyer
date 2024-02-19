@@ -1,0 +1,10 @@
+{{- define "main" }}
+<div class="max-width-lg flex direction-column gap-sm">
+  <h1 class="tc wrap-balance underline">{{ .Title }}</h1>
+  <div class="tc">{{ .Content }}</div>
+  <div class="grid gap-sm align-center justify-center">
+    {{ range .Pages }} {{ partial "painting/painting_preview_pane.html" .
+    }} {{ end }}
+  </div>
+</div>
+{{- end }}

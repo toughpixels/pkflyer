@@ -7,7 +7,6 @@
     --large-character-width: 65ch;
     --medium-character-width: 40ch;
     --small-character-width: 20ch;
-    --almost-full-width: 85%;
 }
 
 .mt-sm {
@@ -74,10 +73,6 @@
 
 .max-width-sm {
     max-width: var(--small-character-width);
-}
-
-.width-wide {
-    width: var(--almost-full-width);
 }
 
 .height-lg {
