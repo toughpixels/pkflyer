@@ -30,7 +30,15 @@ body {
 }
 
 .underline {
-    text-decoration: underline;
+    text-decoration: underline from-font;
+}
+
+.wavy-underline {
+    text-decoration: wavy underline from-font;
+}
+
+.double-underline {
+    text-decoration: double underline from-font;
 }
 
 .underline-headers h1, .underline-headers h2 {

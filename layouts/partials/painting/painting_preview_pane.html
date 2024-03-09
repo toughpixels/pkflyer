@@ -1,7 +1,8 @@
 <div
-  class="font-weight-600 grid place-center max-width-md gap-sm pa-sm sm-shadow accent-border preview-pane painting-preview-pane"
+  class="grid place-center max-width-md gap-sm pa-sm sm-shadow accent-border preview-pane painting-preview-pane preview-box-shadow"
 >
   <div class="font-weight-600 underline">{{.Title}}</div>
+  <div>{{.Summary}}</div>
   <div class="flex painting-preview-container gap-xsm">
     {{ range .Resources }} {{ partial "image.html" . }} {{ end }}
   </div>

@@ -1,13 +1,29 @@
 {{ define "main" }}
-<div class="grid album-grid container gap-xsm underline-headers">
+<div class="grid container gap-xsm underline-headers">
   <h1 class="wrap-balance tc">{{ .Title }}</h1>
-  <div class="flex justify-center">
-    {{ partial "music/bandcamp_large.html" . }}
+  <div class="flex justify-left">
+    {{ with .Params.venueName }}
+    <div class="font-weight-600 underline">{{ . }}</div>
+    {{ end }}
+  </div>
+  <div class="double-underline flex justify-left">
+    {{ .Params.eventDate | time.Format ":date_full" }}
   </div>
   <div>{{ .Content }}</div>
-  <div>
-    <span class="font-weight-600">Release Date:</span> {{ .Date | time.Format
-    ":date_long" }}
+  {{ with .Params.eventDetailLink }}
+  <div class="flex justify-left align-center gap-sm">
+    <div>More Information:</div>
+    <a class="height-md navigation-link" href="{{ . }}" target="_blank">
+      {{ partial "svg/navigation/link_icon.svg" . }}
+    </a>
   </div>
+  {{ end }} {{ with .Params.ticketPurchaseLink }}
+  <div class="flex justify-left align-center gap-sm">
+    <div class="font-weight-600 uppercase">Buy tickets:</div>
+    <a class="height-lg navigation-link" href="{{ . }}" target="_blank">
+      {{ partial "svg/ticket_icon.svg" . }}
+    </a>
+  </div>
+  {{ end }}
 </div>
 {{ end }}

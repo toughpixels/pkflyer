@@ -1,43 +1,41 @@
 <div
-  class="font-weight-600 flex direction-column max-width-md gap-sm pa-sm sm-shadow accent-border preview-pane events-preview-pane"
->
-<div class="flex justify-around align-center">
-  <div class="underline">{{.Title}}</div>
-</div>
-<a class="navigation-link height-md" href="{{ .RelPermalink }}"
->{{ partial "svg/calendar_icon.svg" . }}</a
+  class="font-weight-600 flex direction-column max-width-md gap-sm pa-sm sm-shadow accent-border preview-pane events-preview-pane preview-box-shadow"
 >
   <div class="flex justify-around align-center">
-    {{ with .Params.venueName }}
-    <div class="font-weight-600">
-      {{ . }}
-    </div>
-    {{ end }}
-    {{ with .Params.eventDate }}
+    <div class="underline">{{.Title}}</div>
+  </div>
+  <div class="flex justify-around align-center">
+ {{ with .Params.eventDate }}
     <div class="font-weight-600">
       {{ partial "utility/date_short.html" (time.AsTime . ) }}
     </div>
     {{ end }}
+    {{ with .Params.venueName }}
+    <div class="font-weight-600">{{ . }}</div>
+    {{ end }}
   </div>
   {{ with .Params.eventLink }}
   <div class="flex justify-around align-center">
-  <div>
-    <a href="{{ . }}" target="_blank">Venue Event Page</a>
+    <div>
+      <a href="{{ . }}" target="_blank">Venue Event Page</a>
+    </div>
   </div>
-</div>
   {{ end }}
-
   <div class="flex justify-around align-center gap-sm">
-  {{ with .Params.cost }}
-  <div>
-    ${{ . }}
+    {{ with .Params.cost }}
+    <div>${{ . }}</div>
+    {{ end }} {{ with .Params.ticketPurchaseLink }}
+    <div class="flex align-center gap-xsm">
+      <div>Buy Tickets:</div>
+      <a class="navigation-link height-md" href="{{ . }}" target="_blank">
+        {{ partial "svg/ticket_icon.svg" . }}
+      </a>
+    </div>
+    {{ end }}
   </div>
-  {{ end }}
-  {{ with .Params.ticketPurchaseLink }}
-  <div>
-    <a href="{{ . }}" target="_blank">Buy Tickets</a>
-  </div>
-  {{ end }}
+  <div class="flex justify-around align-center">
+    <a class="navigation-link height-md" href="{{ .RelPermalink }}"
+      >{{ partial "svg/calendar_icon.svg" . }}</a
+    >
   </div>
 </div>
-

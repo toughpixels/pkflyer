@@ -11,7 +11,7 @@ collections:
     folder: content/music
     create: true
     slug: "{{year}}-{{slug}}"
-    path: "{{slug}}/_index"
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     fields:
@@ -28,7 +28,7 @@ collections:
   - label: "Art Collection Tag"
     name: "artCollection"
     folder: tags/art_collection
-    path: "{{slug}}/_index"
+    path: "{{slug}}/index"
     create: true
     media_folder: ""
     public_folder: ""
@@ -41,7 +41,7 @@ collections:
     folder: content/painting
     create: true
     slug: "{{year}}-{{month}}-{{slug}}"
-    path: "{{slug}}/_index"
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     fields:
@@ -71,7 +71,7 @@ collections:
     media_folder: ""
     public_folder: ""
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    path: "{{slug}}/_index"
+    path: "{{slug}}/index"
     fields:
       - { label: "Event Title", name: "title", widget: "string" }
       - { label: "Event Date", name: "eventDate", widget: "date" }

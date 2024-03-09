@@ -1,6 +1,6 @@
 <footer class="pa-sm">
   <div
-    class="flex max-width-md justify-around gap-sm pv-sm height-lg footer-accent round-border accent-border"
+    class="flex max-width-md justify-around gap-sm pv-sm height-lg footer-accent round-border accent-border preview-box-shadow"
   >
     {{ range .Site.Sections }} {{ $icon := .Params.icon }}
     <a href="{{ .RelPermalink }}" class="navigation-link ma-xsm">
@@ -11,7 +11,7 @@
   <div class="flex max-width-md justify-around gap-md pv-sm height-lg mt-sm">
     {{ partial "utility/back_in_section.html" . }} {{ with .Site.GetPage "home"
     }}
-    <div class="round-border footer-accent accent-border navigation-link">
+    <div class="round-border footer-accent accent-border navigation-link preview-box-shadow">
       <a href="{{ .RelPermalink }}">
         {{ with .Params.icon }} {{ partial . }} {{ end }}
       </a>

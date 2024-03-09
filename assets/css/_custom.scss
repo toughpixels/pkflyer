@@ -3,6 +3,10 @@ body {
     justify-content: center;
 }
 
+figure {
+    margin: 0;
+}
+
 html {
     min-height: 100vh;
     background-color: var(--light);
@@ -84,14 +88,17 @@ img {
 }
 
 .accent-border {
-    border: 3px solid var(--black);
-}
-
-.painting-preview-container figure {
-    margin: 0;
+    border: 2px solid var(--black);
 }
 
 .painting-preview-container figure img {
     border-radius: 3px;
-    border: 3px solid black;
+    border: 3px solid var(--black);
+}
+
+.tag-pill {
+    border: 2px solid var(--black);
+    background-color: var(--painting-preview-color);
+    border-radius: 2rem;
+    padding: .5rem
 }

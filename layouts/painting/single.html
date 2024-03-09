@@ -1,1 +1,14 @@
-asdf2
+{{ define "main" }}
+<div class="grid gap-sm mb-sm">
+  <h1 class="wrap-balance tc underline">{{ .Title }}</h1>
+  <div class="tc">{{.Content}}</div>
+  <div class="flex gap-md justify-center painting-container  painting-box-shadow flex-wrap">
+    {{ range .Resources }} {{ partial "image.html" . }} {{ end }}
+  </div>
+  <div class="flex justify-left preview-more gap-xsm flex-wrap">
+    {{ range .GetTerms "tags" }}
+        <a class="tag-pill preview-box-shadow font-weight-600" href="{{.RelPermalink}}">{{.LinkTitle}}</a>
+    {{ end }}
+</div>
+</div>
+{{ end }}
