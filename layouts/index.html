@@ -4,7 +4,7 @@
   <div class="logo">{{ partial "svg/horizontal_pk_flyer_logo.svg" . }}</div>
 </div>
 {{ range .Sections }}
-<div class="grid gap-sm place-center mb-sm">
+<div class="grid gap-md place-center mb-sm">
   <h2 class="tc mb-none mt-none underline">{{ .Title }}</h2>
   <div class="flex direction-column justify-center align-center gap-sm">
     {{ if eq (.Section) "music" }} {{ range first 1 .RegularPages }} {{ partial
