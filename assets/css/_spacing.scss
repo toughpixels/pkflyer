@@ -17,8 +17,29 @@
     margin-bottom: var(--small-gap);
 }
 
+.mt-md {
+    margin-top: var(--medium-gap);
+}
+
+.mb-md {
+    margin-top: var(--medium-gap);
+}
+
+.mt-lg {
+    margin-top: var(--large-gap);
+}
+
+.mb-lg {
+    margin-top: var(--large-gap);
+}
+
+
 .mb-none {
     margin-bottom: 0;
+}
+
+.mt-none {
+    margin-top: 0;
 }
 
 .mv-auto {

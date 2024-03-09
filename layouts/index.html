@@ -3,9 +3,9 @@
   {{ with resources.Get "images/header.png" }} {{ partial "image" . }} {{ end }}
   <div class="logo">{{ partial "svg/horizontal_pk_flyer_logo.svg" . }}</div>
 </div>
-<div class="grid gap-sm place-center">
+<div class="grid gap-sm place-center gap-md mt-lg">
   {{ range .Sections }}
-  <h2 class="tc mb-none underline">{{ .Title }}</h2>
+  <h2 class="tc mb-none mt-none underline">{{ .Title }}</h2>
   <div class="flex direction-column justify-center align-center gap-sm">
     {{ if eq (.Section) "music" }} {{ range first 1 .RegularPages }} {{ partial "music/music_preview_pane" . }}
   {{ end }} {{ else if eq (.Section) "events" }}
