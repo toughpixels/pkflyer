@@ -1,9 +1,11 @@
-{{ $page := . }}
-{{ with and (.Params.bandcampAlbumId) (.Params.bandCampLink) }}
+{{ $page := . }} {{ with and (.Params.bandcampAlbumId) (.Params.bandCampLink) }}
 <iframe
+  title="Bandcamp Player for PK Flyer's {{ $page.Title}}"
   style="border: 0; width: 350px; height: 470px"
   src="https://bandcamp.com/EmbeddedPlayer/album={{ $page.Params.bandcampAlbumId }}/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/"
   seamless
-  ><a href="{{ $page.Params.bandCampLink }}">{{ $page.Title }} by PK Flyer</a></iframe
+  ><a href="{{ $page.Params.bandCampLink }}"
+    >{{ $page.Title }} by PK Flyer</a
+  ></iframe
 >
 {{ end }}

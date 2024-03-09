@@ -1,7 +1,8 @@
-
-    <div class="font-weight-600">More {{ .Title }}:</div>
-    <a href="{{ .RelPermalink }}" class="navigation-link height-md">
+<div class="flex justify-center align-center gap-xsm mb-sm">
+    <div>See all {{ strings.ToLower .Title }}:</div>
+    <a href="{{ .RelPermalink }}" class="navigation-link height-md" aria-label="Internal link icon for all {{ strings.ToLower .Title }}">
         {{ with .Params.icon }}
             {{ partial "svg/navigation/link_icon.svg" }}
         {{ end }}
     </a>
+</div>

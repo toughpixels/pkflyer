@@ -7,7 +7,7 @@ theme = "base"
     [markup.goldmark.renderer]
       unsafe = true
 [params]
-  description = "The art and music of PK Flyer."
+  description = "A collection of art, music, and events created and organized by Paul Karner."
   headerImage  = "images/header.png"
   author = "Tough Pixels"
   imageSizes = "1280 768 640 320"

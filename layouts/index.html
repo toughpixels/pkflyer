@@ -1,24 +1,21 @@
 {{ define "main" }}
-<div class="grid place-center logo-grid container tc gap-sm">
+<div class="grid place-center logo-grid container tc gap-sm mb-md">
   {{ with resources.Get "images/header.png" }} {{ partial "image" . }} {{ end }}
   <div class="logo">{{ partial "svg/horizontal_pk_flyer_logo.svg" . }}</div>
 </div>
-<div class="grid gap-sm place-center gap-md mt-lg">
-  {{ range .Sections }}
+{{ range .Sections }}
+<div class="grid gap-sm place-center mb-sm">
   <h2 class="tc mb-none mt-none underline">{{ .Title }}</h2>
   <div class="flex direction-column justify-center align-center gap-sm">
-    {{ if eq (.Section) "music" }} {{ range first 1 .RegularPages }} {{ partial "music/music_preview_pane" . }}
-  {{ end }} {{ else if eq (.Section) "events" }}
-    {{ partial "event/upcoming_events.html" . }}
-  {{ else if eq (.Section) "painting" }}
-  <div class="flex direction-column justify-center align-center gap-sm">
-    {{ range .Pages }}
-    {{ partial "painting/painting_preview_pane" . }}
-    {{ end }}
-  </div>
- {{ end }}
-  <div class="flex justify-center align-center gap-sm mb-sm">
-    {{ partial "internal-link" . }}
+    {{ if eq (.Section) "music" }} {{ range first 1 .RegularPages }} {{ partial
+    "music/music_preview_pane" . }} {{ end }} {{ else if eq (.Section) "events"
+    }} {{ partial "event/upcoming_events.html" . }} {{ else if eq (.Section)
+    "painting" }}
+    <div class="flex direction-column justify-center align-center gap-sm">
+      {{ range .Pages }} {{ partial "painting/painting_preview_pane" . }} {{ end
+      }}
+    </div>
+    {{ end }} {{ partial "internal-link" . }}
   </div>
 </div>
 {{ end }}
