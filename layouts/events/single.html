@@ -20,7 +20,7 @@
   {{ end }} {{ with .Params.ticketPurchaseLink }}
   <div class="flex justify-left align-center gap-sm">
     <div class="font-weight-600 uppercase">Buy tickets:</div>
-    <a class="height-lg navigation-link" href="{{ . }}" target="_blank">
+    <a class="height-lg navigation-link" href="{{ . }}" target="_blank" aria-label="Ticket purchase link">
       {{ partial "svg/ticket_icon.svg" . }}
     </a>
   </div>
