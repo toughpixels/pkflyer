@@ -1,5 +1,4 @@
 {{ range .RegularPages }} {{ if ge (time.AsTime .Params.eventDate) time.Now }}
-<h2 class="tc mb-none mt-none underline">{{ .Title }}</h2>
-<div class="flex direction-column justify-center align-center gap-sm">
-{{ partial "event/event_preview_pane.html" . }} 
-</div>{{end}} {{ end}}
+<h2 class="tc mb-none mt-none underline">Upcoming Events</h2>
+{{ partial "event/event_preview_pane.html" . }} {{end}} {{ end}}
+

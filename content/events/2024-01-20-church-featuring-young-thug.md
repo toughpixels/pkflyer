@@ -1,6 +1,6 @@
 ---
 title: CHURCH! featuring Young Thug
-eventDate: '2024-04-14'
+eventDate: '2026-04-14'
 eventDetailLink: 'https://hideoutchicago.com/events/'
 ticketPurchaseLink: 'https://hideoutchicago.com/events/'
 cost: '10'
