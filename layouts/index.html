@@ -10,14 +10,14 @@
   <h2 class="tc mb-none mt-none underline">{{ .Title }}</h2>
   <div class="flex direction-column justify-center align-center gap-sm">
     {{ end }} {{ if eq (.Section) "music" }} {{ range first 1 .RegularPages }}
-    {{ partial "music/music_preview_pane" . }} {{ partial "internal-link" . }}
+    {{ partial "music/music_preview_pane" . }}
     {{ end }} {{ else if eq (.Section) "events" }} {{ partial
     "event/upcoming_events.html" . }} {{ else if eq (.Section) "painting" }}
     <div class="flex direction-column justify-center align-center gap-sm">
       {{ range .Pages }} {{ partial "painting/painting_preview_pane" . }} {{ end
       }}
-    </div>
-    {{ partial "internal-link" . }} {{ end }}
+    </div>{{ end }}
+    {{ partial "internal-link" . }}
   </div>
 </div>
 {{ end }}
