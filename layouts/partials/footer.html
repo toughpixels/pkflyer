@@ -3,8 +3,9 @@
     class="flex max-width-md justify-around gap-sm pv-sm height-lg footer-accent round-border accent-border preview-box-shadow"
   >
     {{ range .Site.Sections }} {{ $icon := .Params.icon }}
-    <a href="{{ .RelPermalink }}" class="navigation-link ma-xsm">
+    <a href="{{ .RelPermalink }}" class="navigation-link ma-xsm flex direction-column justify-center align-center">
       {{ with .Params.icon }} {{ partial . }} {{ end }}
+      {{ with .Title }} <div class="font-weight-600">{{ . }}</div> {{ end }}
     </a>
     {{ end }}
   </div>

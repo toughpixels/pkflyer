@@ -1,5 +1,5 @@
 ---
-title: Paintings
+title: Art
 weight: 3
 icon: svg/paint_icon.svg
 ---

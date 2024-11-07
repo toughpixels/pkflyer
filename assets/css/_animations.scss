@@ -1,11 +1,5 @@
-.click-through-icon {
-    border: 1px solid black;
-    border-radius: 99999px;
-    padding: 3px;
-}
-
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:hover svg,
+.navigation-link:focus svg {
     animation: wiggle-item;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
