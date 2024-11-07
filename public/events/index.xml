@@ -4,7 +4,7 @@
     <title>Events on PK Flyer</title>
     <link>http://localhost:1313/events/</link>
     <description>Recent content in Events on PK Flyer</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,14 +12,14 @@
       <link>http://localhost:1313/events/2024-01-20-church-featuring-young-thug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/events/2024-01-20-church-featuring-young-thug/</guid>
-      <description>CHURCH! is an exciting show about GOD and their relationship to us.</description>
+      <description>&lt;p&gt;CHURCH! is an exciting show about GOD and their relationship to us.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;    &#xA;    &#xA;        &#xA;    &#xA;    &#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHURCH!, FIRE-TOOLZ, JESSICA RISKER</title>
       <link>http://localhost:1313/events/2023-12-17-church-fire-toolz-jessica-risker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/events/2023-12-17-church-fire-toolz-jessica-risker/</guid>
-      <description>Church! is a showcase of the salvageable pieces of spirituality in a post-everything world. Hosted by the un-ordained Reverend William Murray-Rodriguez. This inaugural show features guests Angel Marcloid (of Fire-Toolz, and other enterprises) and Jessica Risker (Musician, Therapist, and Podcast host). Guests will perform full sets following the show.</description>
+      <description>&lt;p&gt;Church! is a showcase of the salvageable pieces of spirituality in a post-everything world. Hosted by the un-ordained Reverend William Murray-Rodriguez. This inaugural show features guests Angel Marcloid (of &lt;a href=&#34;https://fire-toolz.bandcamp.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fire-Toolz&lt;/a&gt;, and other enterprises) and Jessica Risker (&lt;a href=&#34;https://jessicarisker.bandcamp.com/track/the-waves&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Musician&lt;/a&gt;, Therapist, and Podcast host). Guests will perform full sets following the show.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

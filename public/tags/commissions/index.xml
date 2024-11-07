@@ -4,7 +4,7 @@
     <title>Commissions on PK Flyer</title>
     <link>http://localhost:1313/tags/commissions/</link>
     <description>Recent content in Commissions on PK Flyer</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Feb 2024 19:44:16 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/commissions/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/painting/2024-02-valentines-day/</link>
       <pubDate>Mon, 19 Feb 2024 19:44:16 +0000</pubDate>
       <guid>http://localhost:1313/painting/2024-02-valentines-day/</guid>
-      <description>Tiny paintings I made for Valentine&amp;rsquo;s day 2024, my first cycle of commissioned paintings.</description>
+      <description>&lt;p&gt;Tiny paintings I made for Valentine&amp;rsquo;s day 2024, my first cycle of commissioned paintings.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
